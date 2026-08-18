@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: cursive;
+}
+.card{
+    height: 330px;
+    width: 200px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px, solid, black;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card div{
+    height: 40%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: linear-gradient(transparent, black);
+    transition: all ease 0.4s;
+    padding: 20px;
+}
+.card:hover div{
+    bottom: 0;
+    
+}
+.card div h4{
+    font-size: 26px;
+    font-weight: 1200;
+}
+.card div a{
+    text-decoration: none;
+    color: red;
+}
